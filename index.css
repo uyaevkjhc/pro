@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+ul li {
+    list-style: none;
+}
+
+.wrap {
+    position: relative;
+    width: 590px;
+    height: 470px;
+    margin: 50px auto;
+    border: 1px solid #000;
+    /* overflow: hidden; */
+}
+
+.list {
+    position: relative;
+}
+
+.item {
+    position: absolute;
+    font-size: 0px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.on {
+    opacity: 1;
+}
+
+/* 左右按钮 */
+.btn_left,
+.btn_right {
+    width: 41px;
+    height: 69px;
+    cursor: pointer;
+    position: absolute;
+    top: 201px;
+    background: url('./img/icon-slides.png');
+}
+
+.btn_right {
+    background-position-x: -124px;
+    position: absolute;
+    right: 0;
+}
+
+.btn_left {
+    background-position-x: -84px;
+    position: absolute;
+    left: 0;
+}
+
+/* 小圆点 */
+.btn_right:hover {
+    background-position-x: -42px;
+
+}
+
+.btn_left:hover {
+    background-position-x: 0px;
+
+}
+
+.pointList {
+    /* height: 20px;
+    width: 20px; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 0px;
+}
+
+.pointList {
+    display: inline-block;
+    /* border: 1px solid #f70; */
+}
+
+.pointList .point {
+    width: 10px;
+    height: 10px;
+    margin: 0 7px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #999;
+    background-color: #999;
+}
+
+.pointList .point:hover {
+    border: 1px solid #999;
+    background-color: #f70;
+}
+
+.pointList .tab_act {
+    /* border: 1px solid #999; */
+    background-color: #f70;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    /* opacity: 0; */
+    z-index: 10;
+    display: none;
+}
